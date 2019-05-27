@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				perspective: 1000px;
+			}
+			.mofan{
+				width: 300px;
+				height: 300px;
+				margin: 300px auto;
+				
+				transform-style: preserve-3d;
+				position: relative;
+				
+				
+			}
+		
+			.mofan:hover{
+				animation: donghua 10s infinite;
+			}
+			@keyframes donghua{
+				from{transform: rotate3d(0,0,0,0deg);}
+				to{transform: rotate3d(1,1,0,720deg);}
+			}
+			
+		
+			
+			
+			.mofan .child1{
+				width: 100px;
+				height: 100px;
+				margin: 50px 50px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 1;
+				
+				transition: all 2s;
+				
+			}
+			.mofan .child{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 1;
+				
+				transition: all 2s;
+				
+			}
+			
+			.qian{
+				background-image:url(img/cat.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: translateZ(100px);
+			}
+			.mofan:hover .qian{
+				width: 300px;
+				height: 300px;
+				transform: translateZ(200px);
+			}
+			
+			.hou{
+				background-image:url(img/cat2.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: translateZ(-100px);
+			}
+			.mofan:hover .hou{
+				width: 300px;
+				height: 300px;
+				transform: translateZ(-200px);
+			}
+			
+			
+			.left{
+				background-image:url(img/cat3.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: rotateY(-90deg) translateZ(100px);
+			}
+			.mofan:hover .left{
+				width: 300px;
+				height: 300px;
+				transform: rotateY(-90deg) translateZ(200px);
+			}
+			
+			.right{
+				background-image:url(img/cat4.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: rotateY(90deg) translateZ(100px)
+			}
+			.mofan:hover .right{
+				width: 300px;
+				height: 300px;
+				transform: rotateY(90deg) translateZ(200px);
+			}
+			
+			.top{
+				background-image:url(img/cat5.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: rotateX(90deg) translateZ(100px)
+			}
+			.mofan:hover .top{
+				width: 300px;
+				height: 300px;
+				transform: rotateX(90deg) translateZ(200px);
+			}
+			
+			
+			.bottom{
+				background-image:url(img/cat6.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: rotateX(-90deg) translateZ(100px)
+			}
+			.mofan:hover .bottom{
+				width: 300px;
+				height: 300px;
+				transform: rotatex(-90deg) translateZ(200px);
+			}
+			
+			/*---------------------------------*/
+			.qian2{
+				background-image:url(img/cat.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: translateZ(50px) ;
+			}
+			.mofan:hover .qian2{
+				width: 200px;
+				height: 200px;
+				transform: translateZ(150px);
+			}
+			
+			.hou2{
+				background-image:url(img/cat2.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: translateZ(-50px) ;
+			}
+			.mofan:hover .hou2{
+				width: 200px;
+				height: 200px;
+				transform: translateZ(-150px);
+			}
+			
+			
+			.left2{
+				background-image:url(img/cat3.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: rotateY(-90deg) translateZ(50px) ;
+			}
+			.mofan:hover .left2{
+				width: 200px;
+				height: 200px;
+				transform: rotateY(-90deg) translateZ(150px);
+			}
+			
+			.right2{
+				background-image:url(img/cat4.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: rotateY(90deg) translateZ(50px)
+			}
+			.mofan:hover .right2{
+				width: 200px;
+				height: 200px;
+				transform: rotateY(90deg) translateZ(150px);
+			}
+			
+			.top2{
+				background-image:url(img/cat5.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: rotateX(90deg) translateZ(50px)
+			}
+			.mofan:hover .top2{
+				width: 200px;
+				height: 200px;
+				transform: rotateX(90deg) translateZ(150px);
+			}
+			
+			
+			.bottom2{
+				background-image:url(img/cat6.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+				
+				transform: rotateX(-90deg) translateZ(50px)
+			}
+			.mofan:hover .bottom2{
+				width: 200px;
+				height: 200px;
+				transform: rotatex(-90deg) translateZ(150px);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="mofan">
+			<div class="mofan1">
+			<div class="child qian"></div>
+			<div class="child hou"></div>
+			<div class="child left"></div>
+			<div class="child right"></div>
+			<div class="child top"></div>
+			<div class="child bottom"></div>
+			</div>
+			<div class="mofan2">
+			<div class="child1 qian2"></div>
+			<div class="child1 hou2"></div>
+			<div class="child1 left2"></div>
+			<div class="child1 right2"></div>
+			<div class="child1 top2"></div>
+			<div class="child1 bottom2"></div>
+			</div>
+		</div>
+	</body>
+</html>
